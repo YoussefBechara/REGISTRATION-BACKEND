@@ -1,0 +1,16 @@
+def registration():
+
+    username = input(f'Username: ')
+    email = input('Email: ')
+    while '@gmail.com' not in email:
+        print('Your email must contain @gmail.com, try again')
+        email = input('Email: ')
+    password = input('Password: ')
+    while len(password) < 8:
+        print('Your password must contain 8 charcters minimum!')
+        password = input('Password: ')
+    while ('0' or '1' or '2' or '3' or '4' or '5' or '6' or '7' or '8' or '9') not in password:
+        print('Your password must contain numbers!')
+        password = input('Password: ')
+    print('Your registration is complete! You may continue...')
+registration()
